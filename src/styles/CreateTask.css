@@ -1,0 +1,114 @@
+.container {
+  background-color: rgb(226, 248, 248);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  overflow: hidden;
+}
+.header {
+  width: 350px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(245, 244, 244);
+}
+.header > svg {
+  cursor: pointer;
+}
+.child {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+  padding: 10px;
+}
+.body {
+  width: 100%;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.duration {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+.select-user {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+input {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  height: 30px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: 2px solid skyblue;
+}
+
+select {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  height: 30px;
+
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.save {
+  border-radius: 5px;
+  padding: 5px;
+  background: rgb(3, 190, 134);
+  color: #fff;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 560px) {
+  .header,
+  .child {
+    width: 300px;
+  }
+}
